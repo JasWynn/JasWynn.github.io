@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		
+	.pastels{
+		width:20px;
+		height:20px;
+		margin:10px;
+		background-color:violet;
+		position:relative;
+		display:inline-block;
+		transition:.1s;
+
+	}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+
+		
+		function makePastel () {
+			var pastel = document.createElement("div");
+			document.body.appendChild(pastel);
+			pastel.classList.add("pastels");
+			
+			function moveAround () {
+				pastel.style.left = Math.random()*1000 + "px";
+			pastel.style.top = Math.random()*1000 + "px";
+
+			}
+
+			setInterval(moveAround, 100);
+
+		}
+
+		for (var x=0; x<30; x=x+1){
+
+			makePastel();
+		};
+	</script>
+
+</body>
+</html>

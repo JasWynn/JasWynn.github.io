@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///Users/student/Desktop/repositories/JasWynn.github.io/yeet.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	<title> Dumplings </title>
+	<style> </style>
+</head>
+<body>
+
+
+ <script>
+
+    	function makeDumpling () {
+    		let dumpling = document.createElement("div");
+    		document.body.appendChild(dumpling);
+            dumpling.style.backgroundSize="cover";
+    		dumpling.style.width = "30px";
+    		dumpling.style.height = "30px";
+            dumpling.style.display="inline-block";
+            dumpling.style.display="relative";
+    		dumpling.style.backgroundImage = "url(dumplings.png)";
+    			dumpling.addEventListener("click",function(event) {
+    				console.log(dumpling.style);
+    			})
+
+
+
+    	};
+    	setInterval(makeDumpling, 100);
+ </script>
+
+<!--  <div style="width: 350px; height: 4000px; background-image: url(&quot;https://png.pngtree.com/png-clipart/20190116/ourmid/pngtree-cute-dumplings-smiley-dumplings-white-dumplings-dumplings-png-image_396866.jpg&quot;);"></div>
+ -->
+
+</body>
+</html>

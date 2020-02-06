@@ -1,0 +1,53 @@
+<DOCTYPE! html>
+<html>
+<head>
+<style type="text/css">
+
+	.pastel{
+		height: 50px;
+		width: 50px;
+		background-color: #ffcc99;
+		position: absolute;
+	}
+
+</style>
+
+	</head>
+
+	<body>
+
+	<div id="pastel" class="pastel"> </div>
+
+<script type="text/javascript">
+	
+	var pastel = document.getElementbyId("pastel")
+	// var currentTop = 0;
+	// var document Height = document.documentElement.clientHeight;
+	// var document Width  = document.documentElement.clientWidth;
+
+	window.setInterval(function() {
+
+var div = document.createElement("div");
+div.style.width = "50px"
+div.style.height = "50px"
+div.style.background = "#ffcc99"
+
+document.getElementbyId("pastel").appendChild(div)
+
+
+
+		currentTop = Math.floor(Math.random() * documentHeight) + 1;
+		currentLeft = Math.floor(Math.random() * documentWidth) + 1;
+
+	pastelElement.style.top = currentTop + "px";
+	pastelElement.style.left = currentLeft + "px";
+	}, 2000);
+
+
+</script>
+
+</body>
+
+
+</html>
+
