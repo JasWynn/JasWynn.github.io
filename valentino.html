@@ -1,0 +1,67 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+	<style type = "text/css"> 
+		body{
+			background-color: pink; 
+			background-image: url(confetti.png);
+		}
+		.pastels{
+		width:100px;
+		height:100px;
+		margin:10px;
+/*		background-color:red;
+*/		position:relative;
+		display:inline-block;
+		transition:.1s;
+		background-image: url(https://media.giphy.com/media/VgH2gAMQvDrsMc58kD/giphy.gif);
+		background-size:contain;
+		background-repeat: no-repeat;
+/*		transition: 1s;
+*/
+	}
+	h1{
+		font-size: 100px;
+		color: red;
+		font-family: cursive;
+		text-align: center;
+	}
+
+
+	</style>
+
+	</head>
+
+<body>
+
+	<script type="text/javascript">
+
+
+		
+		function makePastel () {
+			var pastel = document.createElement("div");
+			document.body.appendChild(pastel);
+			pastel.classList.add("pastels");
+			
+			function moveAround () {
+				pastel.style.left = Math.random()*500 + "px";
+			pastel.style.top = Math.random()*500 + "px";
+
+			}
+
+			setInterval(moveAround, 100);
+
+		}
+
+		for (var x=0; x<30; x=x+1){
+
+			makePastel();
+		};
+	</script>
+
+	<h1> ❤️💕HAPPY ❤️💕  VALENTINE'S DAY!!! </h1>
+
+</body>
+</html>
+
