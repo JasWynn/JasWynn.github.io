@@ -2,23 +2,25 @@
 
 <head>
 
-		<script type="text/javascript">
-
-			var memes = document.getElementByID(' memes')
-
-
-			var dank = ("he need some milk","ight imma head out","dat boi")
-			var input = document.getElementByID("input")
-			var button = document.getElementById("button")
-			function addDog () {
-				breeds.push(input.value);
-				console.log(breeds);
-			}
-
-
-
-		</script>
-
 </head>
+<body>
+	<button onclick="myFunction()"> more spice! </button>
+	<p id="demo"></p>
+<script type="text/javascript">
+
+
+			var spice = ["cinnamon","pepper","tumeric"];
+			document.getElementByID("demo").innerHTML = spice;
+			function myFunction() {
+				spice[spice.length] = "heat";
+			document.getElementByID("demo").innerHTML = spice;
+		}
+
+
+
+</script>
+<p> I am trying my best to use java, but it's difficult</p>
+	
+</body>
 
 </html>

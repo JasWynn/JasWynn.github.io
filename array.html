@@ -1,0 +1,27 @@
+<html>
+
+<head>
+
+</head>
+<body>
+	<button onclick=myFunction()> more spice! </button>
+	<p id="demo"></p>
+<script type="text/javascript">
+
+
+			var spice = ["cinnamon"," pepper"," tumeric "];
+			var x = document.getElementById("demo").innerHTML = spice;
+			var y = spice.length;
+
+			function myFunction() {
+				spice[spice.length] = "heat";
+			document.getElementById("demo").innerHTML = spice;
+		}
+
+
+
+</script>
+	
+</body>
+
+</html>
