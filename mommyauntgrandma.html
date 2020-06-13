@@ -7,30 +7,74 @@
 	body{
 		background-color: aquamarine;
 	}
-	#mommy{
+	.mommy{
 		border-width: 5px;
 		border-color: white;
 		border-style: dotted;
-		background-image: url(JasWynn.github.io/videos/IMG_5963.HEIC);
-	}
-	.september{
-		text-align: center;
-		display: inline-block;
+		width: 500px;
+		height: 250px;
+		background-size: cover;
+		background-image: url("./videos/mom.jpg");
 	}
 	h1{
 		color: blue;
 		text-align: center;
 		font-family: Helvetica;
 	}
+	.mommy:hover{
+		animation-name:expand; 
+  		animation-duration:1s;
+  		animation-iteration-count:infinite;
+  		transition:.5s ease-in-out;
+}
+
+    @keyframes grow {
+        0% {
+            width: 100px;
+            height: 100px;
+        }
+
+        50% {
+            width: 200px;
+            height: 200px;
+        }
+
+        100% {
+            width: 100px;
+            height: 100px;
+        }
+    }
 
 </style>
+<script type="text/javascript">
+	let mommy = document.querySelectorAll(".mommy");
+
+let audios = ["The Intruders I'll Always Love My Mama (1973).mp3"];
+
+for(i = 0; i < mommy.length; i++){
+    let mommy = mommy[i];
+
+  let audio = document.createElement("audio");
+  audio.src = audios[i];
+  document.body.appendChild(audio);
+
+  mommy.onmouseover = () => {
+    audio.play();
+  }
+  mommy.onmouseout = () => {
+    audio.pause();
+    audio.currentTime = 0;
+  }
+}
+</script>
+
 </head>
 <body>
+
 <h1> Happy Mother's Day! </h1>
 
-<div class="september">
-<div id="mommy"> </div>
-</div>
+<div class="mommy"><audio id="song" src="The Intruders I'll Always Love My Mama (1973).mp3"></audio> <bgsound id="song"></div>
+
 
 </body>
 </html>
